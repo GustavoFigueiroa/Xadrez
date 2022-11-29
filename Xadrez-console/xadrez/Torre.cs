@@ -65,17 +65,15 @@ namespace xadrez
 
             return mat;
         }
-
+        public override string ToString()
+        {
+            return "T";
+        }
         private bool podeMover(Posicao pos)
         {
             Peca p = Tab.peca(pos);
             return p == null || p.Cor != this.Cor;
 
-        }
-
-        public override string ToString()
-        {
-            return "T";
-        }
+        }   
     }
 }
